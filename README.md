@@ -7,14 +7,14 @@ Antes de nada, agradecerte dedicar parte de tu tiempo a la realización de este 
 Ésta consiste en el desarrollo de la parte frontend de una sencilla SPA (Single Page Application) de gestión de pedidos.
 
 Se debe crear un servicio para obtener las tareas del siguiente endpoint:
-`GET [endpoint]`
+`GET http://goi.front-challenge.s3-website-eu-west-1.amazonaws.com/`
 
 ## Funciones
 - Mostrar el listado de pedidos con fecha, nombre, dirección y estado del pedido.
 - Paginado.
 - Posibilidad de filtrar los pedidos por fecha (dia), estado y campo abierto.
 - Al pinchar en el pedido accederás al detalle del mismo, mostrando su descripción.
-- En el apartado de detalle de pedido, posibilidad de modificar el estado del pedido (realizar llamada a [endpoint], aunque fallará ya que no es editable en el backend, pero lo trataremos en front como actualizado)
+- En el apartado de detalle de pedido, posibilidad de modificar el estado del pedido (realizar llamada a http://goi.front-challenge.s3-website-eu-west-1.amazonaws.com/[order-id], aunque fallará ya que no es editable en el backend, pero lo trataremos en front como actualizado)
 
 Los cambios realizados no es necesario que tengan persistencia en backend. Al actualizar la página, se resetearán todos los datos, mostrando de nuevo el contenido original obtenido a través del endpoint facilitado.
 
