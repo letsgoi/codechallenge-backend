@@ -1,38 +1,39 @@
 # Code Challage - Frontend
+
 Hola,
 
 Antes de nada, agradecerte dedicar parte de tu tiempo a la realización de este pequeña prueba técnica.
 
-Ésta consiste en el desarrollo de la parte frontend de una sencilla SPA (Single Page Application) de gestión de tareas.
+Ésta consiste en el desarrollo de la parte frontend de una sencilla SPA (Single Page Application) de gestión de pedidos.
 
 Se debe crear un servicio para obtener las tareas del siguiente endpoint:
-`GET https://jsonplaceholder.typicode.com/todos`
-
-
-![Wireframe](https://puu.sh/yWLQy/530cabea29.png)
+`GET [endpoint]`
 
 ## Funciones
-- Mostrar el listado de tareas.
-- Filtrar las tareas a través de una caja de texto.
-- Marcar/Desmarcar tareas como realizadas.
-- Eliminar tareas
-- Añadir nuevas tareas.
+- Mostrar el listado de pedidos con fecha, nombre, dirección y estado del pedido.
+- Paginado.
+- Posibilidad de filtrar los pedidos por fecha (dia), estado y campo abierto.
+- Al pinchar en el pedido accederás al detalle del mismo, mostrando su descripción.
+- En el apartado de detalle de pedido, posibilidad de modificar el estado del pedido (realizar llamada a [endpoint], aunque fallará ya que no es editable en el backend, pero lo trataremos en front como actualizado)
 
-Los cambios realizados sobre el listado de tareas, no es necesario que tengan persistencia en backend. Al actualizar la página, se resetearán todos los datos, mostrando de nuevo el contenido original obtenido a través del endpoint facilitado.
+Los cambios realizados no es necesario que tengan persistencia en backend. Al actualizar la página, se resetearán todos los datos, mostrando de nuevo el contenido original obtenido a través del endpoint facilitado.
 
 ## Requisitos
 - Framework Vue.js
-- El diseño debe de ser responsive.
-- La interface debe estar dividida en componentes, según tu criterio.
-- Hoja de estilos con LESS o Sass.
+- Interfaz modular por componentes.
+- Clean code.
+- Hoja de estilos con Sass.
+- El diseño debe de ser responsive (puede basarse en frameworks tipo bulma, materialize...).
+
 ## Bonus
 - Test unitarios.
 - Diseño atractivo.
 - Comentarios en el código.
+
 ## Workflow
 - Haz un fork de este repositorio.
 - Resuelve el ejercicio.
-- Comparte tu fork para la corrección (Reporter access)
+- Comparte tu fork para la corrección.
 
 Si tienes alguna duda, puedes contactar con nosotros en `tech@letsgoi.com`
 
